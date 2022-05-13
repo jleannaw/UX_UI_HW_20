@@ -120,6 +120,9 @@ grid-row: auto auto;
 .workGrid div {
   max-width: 600px;
 }
+#cycle{
+  color: red;
+}
 button {
 background-color: #D62828;
 border: none;
