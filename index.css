@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+nav {
+background-color: #373738;
+margin: 0;
+margin-bottom: 20px;
+overflow: hidden;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li a {
+  color: white;
+  display: block;
+  line-height: 3em;
+  padding: 1em 3em;
+  text-decoration: none;
+}
+nav ul li:first-child {
+  margin-right: auto;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: #373738
+}
+nav ul li img {
+padding: 10px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+text-align: center;
+margin-bottom: 25px;
+}
+.heroImg {
+justify-content: center;
+align-items: center;
+margin: 1em;
+grid-gap: 25px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 50% 50%;
+grid-template-areas:
+  "imageLeft contentRight contentRight"
+  "imageOne imageTwo imageThree";
+}
+.imageLeft img{
+grid-area: imageLeft;
+max-height: 100%;
+max-width: 100%;
+object-fit: cover;
+}
+.contentRight {
+grid-area: contentRight;
+}
+.imageOne img {
+grid-area: imageOne;
+max-height: 100%;
+max-width: 100%;
+object-fit: cover;
+}
+.imageTwo img {
+grid-area: imageTwo;
+max-height: 100%;
+max-width: 100%;
+object-fit: cover;
+}
+.imageThree {
+grid-area: imageThree;
+max-height: 100%;
+max-width: 100%;
+object-fit: cover;
+}
+.mySkills h1 {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin-top: 45px;
+margin-bottom: 25px;
+}
+.flexContainer {
+justify-content: center;
+align-items: center;
+margin: 1em;
+grid-gap: 25px;
+text-align: center;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto;
+}
+.myWork h1 {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin-top: 45px;
+margin-bottom: 25px;
+}
+.workGrid {
+justify-content: center;
+align-items: center;
+margin: 1em;
+grid-gap: 25px;
+display:grid;
+grid-template-columns: auto auto;
+grid-row: auto auto;
+}
+.workGrid div {
+  max-width: 600px;
+}
+button {
+background-color: #D62828;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+cursor: pointer;
+}
+button:hover {
+  background-color: #000000;
+  color: white;
+  transition: 0.3s;
+}
+footer {
+background-color: #373738;
+margin: 0;
+margin-top: 20px;
+overflow: hidden;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+footer ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+footer ul li a {
+  color: white;
+  display: block;
+  line-height: 3em;
+  padding: 1em 3em;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  background-color: white;
+  color: #373738
+}
+@media only screen and (max-width: 1000px) {
+.heroImg {
+  text-align: center;
+  grid-template-rows: 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "contentRight"
+    "imageLeft"
+    "imageOne"
+    "imageTwo"
+    "imageThree"
+  ;
+}
+}
+@media only screen and (max-width: 850px) {
+.heroImg {
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 150px 300px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "imageLeft"
+    "contentRight"
+    "imageOne"
+    "imageTwo"
+    "imageThree"
+  ;
+}
+}
+@media only screen and (max-width: 850px) {
+.flexContainer {
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 400px;
+  grid-template-columns: 1fr;
+  ;
+}
+}
+@media only screen and (max-width: 1200px) {
+  .myWork h1 {
+    margin: 100px auto;
+}
+    .workGrid div {
+    max-width: none;
+
+}
+  .workGrid {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    ;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .myWork h1 {
+    margin: 100px auto;
+}
+    .workGrid div {
+    max-width: 500px;
+
+}
+  .workGrid {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    ;
+  }
+}
