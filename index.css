@@ -144,6 +144,17 @@ input[type=text], select, textarea {
   background-color: #f2f2f2;
   padding: 20px;
 }
+.m-2 {
+  background-color: rgb(52, 52, 52);
+}
+.mb-3 {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 50px;
+}
 button {
 background-color: #D62828;
 border: none;
